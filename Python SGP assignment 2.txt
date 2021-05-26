@@ -1,0 +1,66 @@
+1. Source Code:
+
+list=[1,2,3,3,4,5]
+
+print(list)
+
+for i in range(len(list)):
+    for j in range(len(list)):
+        if i!=j:
+            if list[i]==list[j]:
+                flag=1
+                break
+
+if (flag==0):
+    print("All elements are unique")
+else:
+    print("Elements are not unique")
+
+
+2.Source Code:
+
+a =[10,50,60,70,70,80]
+print(a)
+
+
+if(len(set(a)) == len(a)):
+
+    print("All elements are unique")
+
+else:
+    print("Elements are not unique")
+
+3.Source code:
+my_list = [1,2,3,3,4,5]
+
+my_final_list = set(my_list)
+print(list(my_final_list))
+
+4.Source code:
+
+A={1,2,3}
+B={1,2,3,4,5,6}
+
+if(A.issubset(B)):
+    print("A is a Subset of B")
+else:
+    print("A is not a subset of B")
+5.Source code:
+
+tup1=(4,5,6)
+tup2=(7,8,9)
+
+print("original tuples")
+print(tup1)
+print(tup2)
+
+print("Resultant tuple:")
+result=tuple(map(sum,zip(tup1,tup2)))
+print(result)
+
+6.Source Code:
+
+tup=(2,5,6)
+print(tup)
+i=sum(tup)
+print(i)
